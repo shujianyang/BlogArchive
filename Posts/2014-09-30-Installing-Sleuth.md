@@ -22,7 +22,7 @@ After installation, run `mmls -V`. The message `The Sleuth Kit ver 2.3.2` should
 If you want to install the latest version, which is 4.1.3 at the time of writing this post, along with some additional support function, use this one.
 
 Before installing TSK, it is critical to set up basic environments like interpreters and compilers for multiple languages. Recommended languages are C/C++, Java, Python, Perl, Ruby. The following commands are helpful:  
-`sudo apt-get install `g++ \ jre \ python \ perl \ ruby
+`sudo apt-get install g++ jre python perl ruby`
 
 To obtain TSK, go the [download page](http://www.sleuthkit.org/sleuthkit/download.php). The download link will direct you to sourceforge.net, click the sleuthkit-4.1.3.tar.gz to download the compressed file to a folder. Go to that folder, use `tar xzf sleuthkit-4.1.3.tar.gz` command to extract files to a folder. Right now the folder contains the following files:
 
