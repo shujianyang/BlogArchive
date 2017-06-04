@@ -9,16 +9,17 @@ Today something weird happened on my VMware Workstation 12 Player. I was unable
 to run any of my virtual machines(VMs) stored on my computer. When I tried to
 run a VM, an error message pop up, saying:
 
-**VMware Player cannot connect to the virtual machine. Make sure you have rights 
-to run the program, access all directories the program uses, and access all 
-directories for temporary files.**
+**<span class="text-danger">VMware Player cannot connect to the virtual machine.
+Make sure you have rights to run the program, access all directories the program
+uses, and access all directories for temporary files.</span>**
 
-**Failed to connect pipe to virtual machine. The system cannot find the path specified.**
+**<span class="text-danger">Failed to connect pipe to virtual machine. The 
+system cannot find the path specified.</span>**
 
 If start VMware Workstation Player in administrator mode, the second part of the
 error message became:
 
-**The vmx process exited prematurely.**
+**<span class="text-danger">The vmx process exited prematurely.</span>**
 <!--excerpt-->
 
 
@@ -54,7 +55,7 @@ gameudp.dll while starting and was terminated.
 
 Further research about this gameudp.dll indicates that it is not a part of the 
 original Windows system file and is safe to be removed. So I backed up this file,
-then deleted it from C:\Windows\System32. After that, I restart VMware Workstation.
+then deleted it from C:\Windows\System32. After that, I restarted VMware Workstation.
 This time, the VM successfully started and the problem was solved.
 
 Interestingly, later I restore the gameudp.dll back to its original location. The
