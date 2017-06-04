@@ -19,6 +19,7 @@ If start VMware Workstation Player in administrator mode, the second part of the
 error message became:
 
 **The vmx process exited prematurely.**
+<!--excerpt-->
 
 
 ### Cause
