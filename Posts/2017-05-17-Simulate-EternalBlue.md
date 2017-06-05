@@ -20,20 +20,20 @@ opportunity to infect machines worldwide.
 
 In this post, I am going to simulate an EternalBlue exploitation against a
 vulnerable Windows 7 virtual machine using Kali Linux and Metasploit Framework.
-<!--excerpt-->
 
-First, create a virtual machine running Windows 7. DO NOT INSTALL ANY WINDOWS UPDATES.
+First, create a virtual machine running Windows 7. DO NOT INSTALL NEW WINDOWS UPDATES.
 
 ![updates](/images/win7_02.png)
 
-*(No new updates)*
+*(No new updates installed)*
 
 Then, share a folder. The Windows Firewall will enable the rule to allow inbound
 communication through port 445.
+<!--excerpt-->
 
 ![firewall](/images/win7_01.png)
 
-*(Port 445 is allowed in Windows Firewall)*
+*(Port 445 is allowed in Windows Firewall inbound rules)*
 
 At this point, this machine has already become a vulnerable target of EternalBlue.
 The scanning result given by Nessus and OpenVAS confirmed this.
@@ -222,10 +222,14 @@ as a powerful shell and perform many useful(dangerous) actions, for example:
 ```nohighlight
 meterpreter > pwd
 C:\Windows\system32
+```
 
+```nohighlight
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
+```
 
+```nohighlight
 meterpreter > ps
 
 Process List
