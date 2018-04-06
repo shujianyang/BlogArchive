@@ -23,7 +23,7 @@ vulnerable Windows 7 virtual machine using Kali Linux and Metasploit Framework.
 
 First, create a virtual machine running Windows 7. DO NOT INSTALL NEW WINDOWS UPDATES.
 
-![updates](/images/win7_02.png)
+![updates](http://blob.syang.io/web-images/Pictures/Blog/win7_02.png)
 
 *(No new updates installed)*
 
@@ -31,18 +31,18 @@ Then, share a folder. The Windows Firewall will enable the rule to allow inbound
 communication through port 445.
 <!--excerpt-->
 
-![firewall](/images/win7_01.png)
+![firewall](http://blob.syang.io/web-images/Pictures/Blog/win7_01.png)
 
 *(Port 445 is allowed in Windows Firewall inbound rules)*
 
 At this point, this machine has already become a vulnerable target of EternalBlue.
 The scanning result given by Nessus and OpenVAS confirmed this.
 
-![nessus](/images/win7_03.png)
+![nessus](http://blob.syang.io/web-images/Pictures/Blog/win7_03.png)
 
 *(Nessus scanning result)*
 
-![openvas](/images/win7_04.PNG)
+![openvas](http://blob.syang.io/web-images/Pictures/Blog/win7_04.PNG)
 
 *(OpenVAS scanning result)*
 
@@ -56,7 +56,7 @@ Then use the following command to start Metasploit Framework:
 msfconsole
 ```
 
-![metasploit](/images/win7_05.png)
+![metasploit](http://blob.syang.io/web-images/Pictures/Blog/win7_05.png)
 
 *(Starting Metasploit)*
 

@@ -26,7 +26,7 @@ Before installing TSK, it is critical to set up basic environments like interpre
 
 To obtain TSK, go the [download page](http://www.sleuthkit.org/sleuthkit/download.php). The download link will direct you to sourceforge.net, click the sleuthkit-4.1.3.tar.gz to download the compressed file to a folder. Go to that folder, use `tar xzf sleuthkit-4.1.3.tar.gz` command to extract files to a folder. Right now the folder contains the following files:
 
-![unzipped](/images/unzipped.png) 
+![unzipped](http://blob.syang.io/web-images/Pictures/Blog/unzipped.png) 
 
 If you have Linux experience, you should know that installing open source software is very different as installing software on Windows system. In a nutshell, the process has three stages:
 
@@ -36,7 +36,7 @@ You can find an detailed explanation of this process [here](http://www.thegeekst
 
 To start the installation process, use command `./configure`. The ending part of output may look like this:
 
-![nosup](/images/nosupport.png)
+![nosup](http://blob.syang.io/web-images/Pictures/Blog/nosupport.png)
 
 Here several building supports are missing. Zlib, which is used to handle zipped files, can be install by running `sudo apt-get install zlib1g`. Both afflib and libewf are libraries of formats (AFF and EWF) to store disk images. Adding these two supports is very useful. So it would be a better idea to enable them.
 
@@ -50,13 +50,13 @@ The Java/JNI support is not so important so far for command line tools. I just l
 
 Eventually, you can get the `./configure` result as:
 
-![sup](/images/sup.png)
+![sup](http://blob.syang.io/web-images/Pictures/Blog/sup.png)
 
 When it is ready, the Makefile should be generated in the folder. Run `make` command to compile the whole kit. Be patient, it make take some time. After compilation, use `sudo make install` to finish installation.
 
 To test whether TSK is successfully installed, rum `mmls -V` (mmls is one of the tools in TSK for displaying partition table). The version of TSK should appear:
 
-![suc](/images/success.png)
+![suc](http://blob.syang.io/web-images/Pictures/Blog/success.png)
 
 Once installed, the TSK can be used to perform many basic digital forensics exploration. I will post some experience about it in the following articles.
 

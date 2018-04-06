@@ -57,10 +57,10 @@ Units are in 512-byte sectors
 ```
 
 If Dejavu Sans Mono is installed, the codes look like this:  
-![dejavu](/images/dejavusansmono.png)
+![dejavu](http://blob.syang.io/web-images/Pictures/Blog/dejavusansmono.png)
 
 If you don't have Dejavu Sans Mono, but installed Consolas, they look like this:  
-![consolas](/images/consolas.png)
+![consolas](http://blob.syang.io/web-images/Pictures/Blog/consolas.png)
 
 In the end, let us see what happened if I don't designate `monospace` at the end of font-family setting while previous typefaces are not found. Use the following setting in `css/main.scss`:
 
@@ -70,6 +70,6 @@ $code-font-family: Consolas;
 
 Then open Firefox in Ubuntu operating system, where Consolas typeface is not installed. Visit the same page, you can see:
 
-![nomono](/images/nomono.png)
+![nomono](http://blob.syang.io/web-images/Pictures/Blog/nomono.png)
 
 Note Firefox now choose a non-monospaced typeface to display the codes. I am sure everyone will immediately notice the rows in the bottom table are incorrectly aligned, which is painful to programmers, or at least, to me. :) But seriously, code alignment is very important when programming. Unexpected alignments may indicates grammar errors or typos. Thus, using monospaced typeface is highly recommended to avoid false alignment errors and distractions to programmers.
